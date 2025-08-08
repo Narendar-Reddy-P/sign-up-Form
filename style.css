@@ -1,5 +1,7 @@
-
-
+@font-face {
+   font-family: norse-bold;
+   src: url(media/Norse-Bold.otf);
+}
 html{
    display: flex;
    height: 100vh;
@@ -16,12 +18,31 @@ body{
    width:70vw;
    margin:0;
    background-color:white;
-   
 }
 
-#bg div{
-   background-color: black;
-   opacity: 0.5;
+#bg{
+   /* display: block; */
+   display: flex;
+   flex-direction: column;
+    background-image: url(/media/backgroundImage.png);
+   background-size: cover;
+   height: 100vh;
+   width:50%;
+   justify-content: start;
+}
+#title{
+   display: flex;
+   background-color: rgba(0,0,0,0.5);
+   flex-basis: 150px;
+   width: 100%;
+   justify-content:center;
+   margin-top: 200px;
+   /* opacity:0.5; will also make text opacity to 0.5 */
+}
+img{
+   height: 100px;
+   width: 75px;
+   align-self: center;
 }
 
 p{
@@ -29,65 +50,106 @@ p{
 }
 h1{
    color:white;
+   font-family: norse-bold;
+   font-size: 75px;
+   margin: 0;
+   align-self: center;
+   opacity: 1;
+}
    
-}
-
-#bg{
-   background-image: url(/media/backgroundImage.png);
-   background-size: cover;
-   height: auto;
-   width: 70%;
-}
 
 span{
    font-style: italic;
 }
 
-input[type="submit"]{
-   background-color: green;
+button{
+   background-color: #596D48;
    color:white ;
     margin-left:30px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius:5px ;
+   padding:5px 20px 5px 20px;
 }
 #main{
    display:flex;
+   flex-direction: column;
    flex-wrap: wrap;
    justify-content: space-around;
    gap:15px;
 }
 
-#main div{
+#main .lvl1{
    display: flex;
-   flex-direction:column;
+   justify-content: start;
+   gap:40px;
+}
+
+#main .lvl1 div{
+   display: flex;
+   flex-direction: column;
+   
 }
 
 label{
-   font-size: 11px;
+   font-size: 10px;
 }
 
 h3{
-   margin-left: 15px;
+   margin-left: 0px;
 }
 
 p{
    margin-left: 30px;;
+   margin-right: 100px;
 }
 
 #formpart{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   background-color: white;
 }
 #login{
    margin-left:30px;
 }
 
 fieldset{
-   padding:0px auto 25px 25px;
+   padding:0px 25px 25px 25px;
+   border:none;
+   box-shadow: 0px 1px 5px;
+   border-color: #E5E7EB;
+   background-color: whitesmoke;
+   
 }
 
-a{
-   color:green;
+a{ 
+
+   color:#596D48;
 }
+
+input{
+   border-color: #E5E7EB;
+   border-radius: 3px;
+}
+#password:invalid,#confirmPassword:invalid{
+   border-color: red;
+   outline:none;
+}
+
+#password:valid,#confirmPassword:valid{
+   border-bottom: green;
+}
+input:focus{
+   border-color: blue;
+   outline: none;
+}
+
+#title{
+   box-sizing: border-box;
+   height: 60px;
+   width: auto;
+}
+
+
+

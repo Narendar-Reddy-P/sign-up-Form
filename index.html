@@ -9,51 +9,58 @@
 </head>
 <body>
    <div id="bg">
-      <div>
-      <h1>ODIN</h1>
+      <div id="title">
+         <img src="media/odinlogo.jpg" alt="odinlogo">
+         <h1>ODIN</h1>
       </div>
    </div>
    <div id="formpart">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-      <p>Sign up <span>now</span> to get started</p>
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <span>now</span> to get started</p>
       <p>You <span>know</span> you want to.</p>
       <form action="">
          <fieldset>
             <h3>Let's do this!</h3>
 
             <div id="main">
-            <div>
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" value="Thor">
-            </div>
 
-            <div>
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" value="Odinson">
-            </div>
+               <div class="lvl1">
+                  <div>
+                     <label for="firstName">FIRST NAME</label>
+                     <input type="text" id="firstName" value="Thor">
+                  </div>
 
-            <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email">
-            </div>
+                  <div>
+                     <label for="lastName">LAST NAME</label>
+                     <input type="text" id="lastName" value="Odinson">
+                  </div>
+               </div>
 
-            <div>
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="number" id="phoneNumber">
-         </div>
+               <div class="lvl1">
+                  <div>
+                     <label for="email">EMAIL</label>
+                     <input type="email" id="email">
+                  </div>
 
-            <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password">
-            </div>
+                  <div>
+                     <label for="phoneNumber">PHONE NUMBER</label>
+                     <input type="number" id="phoneNumber">
+                  </div>
+               </div>
 
-            <div>
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="password" id="confirmPassword">
-            </div>
+               <div class="lvl1">
+                  <div>
+                     <label for="password" >PASSWORD</label>
+                     <input type="password" id="password" minlength="8" required>
+                  </div>
+
+                  <div>
+                     <label for="confirmPassword">CONFIRM PASSWORD</label>
+                     <input type="password" id="confirmPassword" minlength="8" required>
+                  </div>
+               </div>
             </div>
          </fieldset>
-         <input type="submit" value="Create Account">
+         <button>Submit</button>
       </form>
       <div id="login">Already have an account? <a>Log in</a> </div>
    </div>
