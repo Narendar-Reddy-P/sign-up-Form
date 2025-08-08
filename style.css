@@ -1,0 +1,93 @@
+
+
+html{
+   display: flex;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   justify-content: center;
+   background-color: black;
+}
+
+body{
+   flex-shrink: 0;
+   display:flex;
+   height: auto;
+   width:70vw;
+   margin:0;
+   background-color:white;
+   
+}
+
+#bg div{
+   background-color: black;
+   opacity: 0.5;
+}
+
+p{
+   font-weight: bold;
+}
+h1{
+   color:white;
+   
+}
+
+#bg{
+   background-image: url(/media/backgroundImage.png);
+   background-size: cover;
+   height: auto;
+   width: 70%;
+}
+
+span{
+   font-style: italic;
+}
+
+input[type="submit"]{
+   background-color: green;
+   color:white ;
+    margin-left:30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius:5px ;
+}
+#main{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap:15px;
+}
+
+#main div{
+   display: flex;
+   flex-direction:column;
+}
+
+label{
+   font-size: 11px;
+}
+
+h3{
+   margin-left: 15px;
+}
+
+p{
+   margin-left: 30px;;
+}
+
+#formpart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#login{
+   margin-left:30px;
+}
+
+fieldset{
+   padding:0px auto 25px 25px;
+}
+
+a{
+   color:green;
+}
